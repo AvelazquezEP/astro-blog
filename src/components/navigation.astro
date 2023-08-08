@@ -5,7 +5,18 @@ const {href, name} = Astro.props;
 
 ---
 
-<a href={href}>{name}</a>
+<ul class="nav-menu">
+    <li>
+        <a href="/">Home</a>
+    </li>
+    <li>
+        <a href="/blog/">Blog</a>
+    </li>
+    <li>
+        <a href="/about">About</a>
+    </li>
+</ul>
+<!-- <a href={href}>{name}</a> -->
 
 <style>
     .nav-menu {
@@ -28,6 +39,7 @@ const {href, name} = Astro.props;
     a:hover {
         color: #000000;
         scale: 1.1;
+        text-decoration: underline;
     }
 
 </style>
