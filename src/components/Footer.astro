@@ -4,26 +4,29 @@ import Social from './Social.astro';
 const link = "https://abogadoericprice.com";
 ---
 
-
 <footer>
     <p>Eric Price, main site <a href={link}>link</a></p>
-    <Social platform="Facebook" username="ericprice" iconColor="#4c1d95"/>
-    <Social platform="Instagra" username="ericprice" iconColor="#4c1d95"/>
-    <Social platform="TikTok" username="ericprice" iconColor="#4c1d95"/>
-    <Social platform="Youtube" username="ericprice" iconColor="#4c1d95"/>
+    <div class="social-container">
+        <Social platform="Social" username="ericprice" iconColor="#4c1d95"/>
+    </div>
 </footer>
 
-    <style>
-        footer{
-            
-            bottom: 0;
-            width: 100%;
+<style>
+    footer{
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            
-        }
-    </style>
+    .social-container {
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+        color: #4c1d95;
+    }
+</style>

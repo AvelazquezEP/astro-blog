@@ -5,7 +5,7 @@ const {href, name} = Astro.props;
 
 ---
 
-<ul class="nav-menu">
+<!-- <ul class="nav-menu">
     <li>
         <a href="/">Home</a>
     </li>
@@ -15,11 +15,17 @@ const {href, name} = Astro.props;
     <li>
         <a href="/about">About</a>
     </li>
-</ul>
+</ul> -->
 <!-- <a href={href}>{name}</a> -->
 
+<div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/about">About</a>
+</div>
+
 <style>
-    .nav-menu {
+    /* .nav-menu {
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -40,6 +46,6 @@ const {href, name} = Astro.props;
         color: #000000;
         scale: 1.1;
         text-decoration: underline;
-    }
+    } */
 
 </style>
