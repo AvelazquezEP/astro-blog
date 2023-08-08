@@ -4,15 +4,23 @@ import Social from './Social.astro';
 const link = "https://abogadoericprice.com";
 ---
 
-<style>
-    footer{
-        display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
-</style>
 
 <footer>
     <p>Eric Price, main site <a href={link}>link</a></p>
     <Social platform="youtube" username="ericprice"/>
 </footer>
+
+    <style>
+        footer{
+            
+            bottom: 0;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            
+        }
+    </style>

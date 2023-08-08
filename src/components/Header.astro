@@ -1,0 +1,45 @@
+---
+import Navigation from './Navigation.astro';
+---
+
+<header>
+    <a href="/">
+        <img src="" alt="Logo">
+    </a>
+    <nav>
+        <ul class="nav-menu">
+            <Navigation />
+            <li>
+                <Navigation href="/" name="Home"/>
+            </li>
+            <li>
+                <Navigation href="/blog/" name="Blog"/>
+            </li>
+            <li>
+                <Navigation href="/about/" name="About"/>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-menu li:hover {
+        scale: 1.1;   
+    }
+
+</style>

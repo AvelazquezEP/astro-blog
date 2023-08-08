@@ -1,5 +1,33 @@
 ---
+// const {href, name} = Astro.props;
+
+const {href, name} = Astro.props;
+
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+
+<a href={href}>{name}</a>
+
+<style>
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-menu li:hover {
+        scale: 1.1;   
+    }
+    
+    a{
+        text-decoration: none;
+        color: #575757;
+        font-weight: 600;
+    }
+
+    a:hover {
+        color: #000000;
+        scale: 1.1;
+    }
+
+</style>
