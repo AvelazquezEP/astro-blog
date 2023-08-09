@@ -1,0 +1,28 @@
+---
+const {url, pubDate, imgUrl, imgAlt, title, description} = Astro.props;
+---
+
+<li class="item_post">
+    <a href={url}>
+        <p>{pubDate.slice(0, 10)}</p>
+        <img class="post_image" src={imgUrl} alt={imgAlt}>
+        <a href={url}>{title}</a>
+        <p>{description}</p>
+    </a>
+</li>
+
+<style>
+
+    .item_post {        
+        /* background-color: #f7f7f7; */
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.2rem;
+        /* box-shadow: 0.1rem 0.1rem 0.5rem #444444 ; */
+    }
+
+    .post_image {
+        max-width: 100%;
+    }
+
+</style>
