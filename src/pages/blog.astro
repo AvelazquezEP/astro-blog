@@ -9,7 +9,7 @@ const pageTitle = "Blog";
         
     <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
 
-    <ul>
+    <ul class="post-container">
         <li>
             <a href="/posts/post-1/">Post 1</a>
         </li>
@@ -21,3 +21,29 @@ const pageTitle = "Blog";
         </li>
     </ul>
 </BaseLayout>
+
+<style>
+    .post-container {
+        list-style: none;        
+    }
+
+    .post-container li {
+        /* margin-bottom: 0.8rem; */
+        /* background-color: #b4b4b4; */
+        padding: 0.8rem;
+    }
+
+    .post-container li: :hover {
+        
+    }
+
+    a {
+        padding: 0.5rem ;
+        text-decoration: none;
+        color: #252525;
+        font-weight: 600;
+        background-color: #ececec;
+        border-radius: 0.1rem;
+        box-shadow: 1px 1px 0.1rem black;
+    }
+</style>
